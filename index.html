@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+     <!-- this is the coding of head tag -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Creative Tim</title>
+	
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet"> 
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+     <!-- this is the css style coding -->
+
+ <style>
+
+   #home-img {
+   width: 100%;
+   height:111%;
+   }
+
+   .navbar {
+   margin-bottom: 0;
+   background-color: transparent;
+   border: none;
+   margin-top:15px;
+   }
+ 
+   #navigationbar a {
+   color: Dark grey;
+   font-size:20px;
+   }
+
+   .navbar-default a.navbar-brand {
+   color: dark grey;
+   font-size:30px;
+   margin-top:-10px;
+   }
+
+   #home {
+   position: relative;
+   height:600px;
+   margin-top:0px;
+   }
+
+   #home .container {
+   position: absolute;
+   top:20%;
+   width: 100%;
+   }
+
+   #creative {
+   color: white;
+   font-size:120px;
+   font-family: 'Cinzel', serif;
+   letter-spacing:10px;
+   }
+
+   .underline1 {
+   border: 2px solid brown;
+   width: 33%;
+   }
+
+   .underline2 {
+   border: 2px solid brown;
+   width: 21%;
+   }
+
+   .underline3 {
+   border: 2px solid brown;
+   width: 17%;
+   }
+
+   .underline4 {
+   border: 2px solid brown;
+   width: 19%;
+   }
+
+   #home .home-heading {
+   width:60%;
+   border: 2px solid #eee;
+   }
+
+   #home h2 {
+   font-size:25px;
+   color:white;
+   margin-top:76px;
+   font-family: 'Sansita', sans-serif;
+   letter-spacing:1px;
+   }
+
+   .scroll-icon a {
+   font-size:32px;
+   color:white;
+   border: 1.5px solid white;
+   padding:10px 8px 4px 10px;
+   border-radius:50%;
+   }
+
+   .scroll-icon {
+   margin-top:180px;
+   }
+
+   section {
+   min-height: 500px;
+   margin-top:110px;
+   }
+
+   .about-content {
+   color: rgba(119, 27, 26, 0.53);
+   font-size: 26px;
+   padding: 35px 40px 10px 40px;
+   }
+
+   .section-heading {
+   font-size: 45px;
+   }
+
+   .section-column {
+   margin-top: 50px;
+   font-size: 18px;
+   color: rgba(100, 21, 20, 0.7);
+   }
+
+   .section-column h2 {
+   color: rgba(0, 0, 0, 0.72);
+   }
+
+
+   #about img {
+   margin-bottom: 30px;
+   }
+
+   .about-icon {
+   font-size: 82px;
+   }
+
+   .team-img {
+   width: 125px;
+   margin: 0 auto;
+   border: 2px solid #c5a47e;
+   }
+
+   .team-about {
+   color: #777777;
+   }
+
+ </style>
+ </head>
+          <!-- this is the beginning of <body> -->
+ <body>
+
+      <!-- this is the coding for Mobile Display -->
+      <!-- this is the coding for navigation bar for mobile and desktop devices -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container-fluid">
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar" aria-expanded="false">
+    <span class="sr-only"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="#"><h3>Creative Tim</h3></a>
+  </div>
+  <div class="Collapse navbar-collapse" id="navigationbar">
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="#">About</a></li>
+    <li><a href="#">What we do</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Contact Us</a></li>
+   </ul>
+  </div>
+ </div>
+</nav>
+
+     <!-- this is the coding for home section -->
+
+<section id="home">
+ <img id="home-img" src="assets/images/creative-tim.jpg">
+       <!-- these container and row classes are predefined bootstrap classes -->
+  <div class="container">
+   <div class="row">
+   <h1 class="text-center" id="creative">Creative Tim</h1>
+       <!-- <hr> is used to underline the headings -->
+    <hr class="home-heading" />
+   <h2 class="text-center">Awesome Bootstrap freebies and templates to build better websites</h2>
+       <!-- this is the icon syntax -->
+    <div class="scroll-icon text-center">
+    <a href="#">
+    <span class="glyphicon glyphicon-menu-down"></span>
+    </a>
+   </div>
+  </div>
+ </div>
+</section>
+
+    <!-- this is the coding for about section -->
+
+<section id="about">
+       <!-- these container and row classes are predefined bootstrap classes -->
+ <div class="container">
+  <div class="row">
+  <h1 class="text-center section-heading">About Creative Tim</h1>
+       <!-- <hr> is used to underline the headings -->
+   <hr class="underline1" />
+   <p class="about-content text-center">
+    Creative Tim is a startup that creates design tools that make the web development process faster and easier. We love the web and care deeply for     how users interact with a digital product. We power businesses and individuals to create better looking web projects around the world.
+   </p>
+  </div>
+   <div class="row">
+    <div class="col-md-4">
+      <img src="http://presentation.creative-tim.com/assets/img/pic10.jpg" class="img-responsive">
+      <img src="http://presentation.creative-tim.com/assets/img/pic6.jpg" class="img-responsive">
+    </div>
+    
+    <div class="col-md-4">
+     <img src="http://presentation.creative-tim.com/assets/img/pic11.jpg" class="img-responsive">
+     <img src="http://presentation.creative-tim.com/assets/img/pic1.jpg" class="img-responsive">
+     <img src="http://presentation.creative-tim.com/assets/img/pic9.jpg" class="img-responsive">
+    </div>
+
+    <div class="col-md-4">
+     <img src="http://presentation.creative-tim.com/assets/img/pic2.jpg" class="img-responsive">
+     <img src="http://presentation.creative-tim.com/assets/img/pic4.jpg" class="img-responsive">
+    </div>
+  </div>
+ </div>
+</section>
+
+    <!-- this is the coding for what we do section -->
+
+<section id="what we do">
+      <!-- these container and row classes are predefined bootstrap classes -->
+ <div class="container">
+  <div class="row">
+  <h1 class="text-center section-heading">What we do</h1>
+      <!-- <hr> is used to underline the headings -->
+   <hr class="underline2" />
+      <!-- these are the column sections -->
+   <div class="container">
+    <div class="row">
+     <div class="col-md-4 text-center section-column">
+      <span class="about-icon">
+       <i class="fa fa-cog" aria-hidden="true"></i>
+      </span>
+     <h2>Create UI Tools</h2>
+      <p>
+        We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.
+      </p>
+     </div>
+     <div class="col-md-4 text-center section-column">
+      <span class="about-icon">
+       <i class="fa fa-gift" aria-hidden="true"></i>
+      </span>
+     <h2>Power Hackathons</h2>
+      <p>
+        We've sponsored many hackathons around the world with the tools that they need to make awesome web applications. We like to help where we can, and our tools go hand in hand with startups.
+      </p>
+     </div>
+     <div class="col-md-4 text-center section-column">
+      <span class="about-icon">
+       <i class="fa fa-rocket" aria-hidden="true"></i>
+      </span>
+     <h2>Share Freebies</h2>
+      <p>
+        Everything that we used to create our platform can be downloaded for free and guess what, people love free stuff. People have already trusted and used them in thousands of sites.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+    <!-- this is the coding for team section -->
+
+<section id="team">
+       <!-- these container and row classes are predefined bootstrap classes -->
+ <div class="container">
+  <div class="row">
+  <h1 class="text-center section-heading">Our Team</h1>
+       <!-- <hr> is used to underline the headings -->
+   <hr class="underline3" />
+
+   <div class="container">
+    <div class="row">
+     <div class="col-md-3">
+      <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
+      <h3 class="text-center team-heading">ELENA CONACEL</h3>
+      <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
+     <hr>
+     <i class="fa fa-twitter"></i>
+     <i class="fa fa-linkedin"></i>
+     </div>
+
+     <div class="col-md-3">
+      <img src="http://presentation.creative-tim.com/assets/img/diana.png" class="img-responsive img-circle team-img">
+      <h3 class="text-center team-heading">DIANA CALIMAN</h3>
+      <p class="text-center team-about">Diana is the person behind our social media channels, she takes care of our users' community and communication. She is ambitious, hard-working, instantly likeable and fun to be around.</p>
+     <hr>
+     </div>
+
+     <div class="col-md-3">
+      <img src="http://presentation.creative-tim.com/assets/img/alex.png" class="img-responsive img-circle team-img">
+      <h3 class="text-center team-heading">ALEX PADURARU</h3>
+      <p class="text-center team-about">Alex is one of the co-founders and drives the technical strategy of the platform, customer support and brand. He is level-headed, smart and with a taste for simple, aesthetic design.</p>
+     <hr>
+     </div>
+
+     <div class="col-md-3">
+      <img src="http://presentation.creative-tim.com/assets/img/beni.jpg" class="img-responsive img-circle team-img">
+      <h3 class="text-center team-heading">BENIAMIN MARCU</h3>
+      <p class="text-center team-about">Beni is the guy responsible for keeping the platform in check, improving its functionality and adding new features. He is driven, always open for learning more, friendly and a fan of Ruby on Rails. </p>
+     <hr>
+     </div>
+
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+    <!-- this is the coding for contact section -->
+
+<section id="contact">
+      <!-- these container and row classes are predefined bootstrap classes -->
+ <div class="container">
+  <div class="row">
+  <h1 class="text-center section-heading">Contact Us</h1>
+      <!-- <hr> is used to underline the headings -->
+   <hr class="underline4" />
+  </div>
+ </div>
+</section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.js"></script>
+
+  </body>
+</html>

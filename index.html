@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+ <html>
      <!-- this is the coding of head tag -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/download.png"/>
     <title>Creative Tim</title>
 	
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
@@ -24,6 +25,24 @@
      <!-- this is the css style coding -->
 
  <style>
+   
+   html,body {
+     width:100%;
+     height:100%;
+     margin:0px;
+     padding:0px;
+     overflow-x:hidden;
+     <!-- padding-top:50px; -->
+   }
+
+   html {
+     padding-top:50px;
+   }
+
+   body {
+     font-family: 'Lato', sans-serif;
+     padding-top:0px;
+   }
 
    #home-img {
    width: 100%;
@@ -32,9 +51,9 @@
 
    .navbar {
    margin-bottom: 0;
-   background-color: transparent;
+   <!-- background-color: transparent; -->
    border: none;
-   margin-top:15px;
+   margin-top:0px;
    }
  
    #navigationbar a {
@@ -51,7 +70,7 @@
    #home {
    position: relative;
    height:600px;
-   margin-top:0px;
+   margin-top:-50px;
    }
 
    #home .container {
@@ -125,18 +144,12 @@
 
    .section-heading {
    font-size: 45px;
-   }
-
-   .section-column {
-   margin-top: 50px;
-   font-size: 18px;
-   color: rgba(100, 21, 20, 0.7);
+   margin-top:70px;
    }
 
    .section-column h2 {
    color: rgba(0, 0, 0, 0.72);
    }
-
 
    #about img {
    margin-bottom: 30px;
@@ -154,12 +167,87 @@
 
    .team-about {
    color: #777777;
+   padding: 15px;
    }
 
+   .team-heading {
+     margin-top: 30px;
+   }
+
+   .team-social-links a {
+     font-size: 22px;
+     color: #bbbbbb;
+     margin-right: 10px;
+   }
+
+   .team-social-links a:hover {
+     color: #c5a47e;
+     text-decoration: none;
+     font-size: 32px;
+     margin-bottom:20px;
+   }
+
+   .team-horizontal-line {
+     border top: 1px solid #ddd;
+   }
+
+   .common-section-area {
+     margin-bottom: 60px;
+   }
+
+   <!-- #team .team-bottom {
+     margin-bottom:20px;
+   } -->
+
+   <!-- #contact {
+     margin-top:30px;
+   } -->
+
+   #googlemap {
+     height: 400px;
+     width:100%;
+   }
+
+   footer {
+     background: rgba(32, 32, 32, 0.95);
+     margin-top:30px;
+     padding:20px;
+   }
+
+   .footer-icons li , .footer-links li
+   {
+     display: inline-block; 
+   }
+
+   .footer-icons li a , .footer-links li a 
+   {
+     color: #777777;
+     font-size:15px;
+     padding:9px;
+   }
+
+   .footer-icons li a:hover , .footer-links li a:hover
+   {
+     text-decoration:none;
+   }
+
+   footer .footer-center-content {
+     color:#777777;
+   }
+
+   .white-content {
+     color:white;
+   }
+
+
  </style>
+
+
  </head>
+  
           <!-- this is the beginning of <body> -->
- <body>
+  
+  <body>
 
       <!-- this is the coding for Mobile Display -->
       <!-- this is the coding for navigation bar for mobile and desktop devices -->
@@ -168,19 +256,20 @@
  <div class="container-fluid">
   <div class="navbar-header">
    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar" aria-expanded="false">
-    <span class="sr-only"></span>
+    <span class="sr-only">Toggle navigation</span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
    </button>
-   <a class="navbar-brand" href="#"><h3>Creative Tim</h3></a>
+   <a class="navbar-brand" href="#home"><h3>Creative Tim</h3></a>
   </div>
+
   <div class="Collapse navbar-collapse" id="navigationbar">
    <ul class="nav navbar-nav navbar-right">
-    <li><a href="#">About</a></li>
-    <li><a href="#">What we do</a></li>
-    <li><a href="#">Team</a></li>
-    <li><a href="#">Contact Us</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#what we do">What we do</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
    </ul>
   </div>
  </div>
@@ -199,7 +288,7 @@
    <h2 class="text-center">Awesome Bootstrap freebies and templates to build better websites</h2>
        <!-- this is the icon syntax -->
     <div class="scroll-icon text-center">
-    <a href="#">
+    <a href="#about">
     <span class="glyphicon glyphicon-menu-down"></span>
     </a>
    </div>
@@ -213,6 +302,7 @@
        <!-- these container and row classes are predefined bootstrap classes -->
  <div class="container">
   <div class="row">
+   <div class="common-section-area">
   <h1 class="text-center section-heading">About Creative Tim</h1>
        <!-- <hr> is used to underline the headings -->
    <hr class="underline1" />
@@ -220,22 +310,23 @@
     Creative Tim is a startup that creates design tools that make the web development process faster and easier. We love the web and care deeply for     how users interact with a digital product. We power businesses and individuals to create better looking web projects around the world.
    </p>
   </div>
-   <div class="row">
-    <div class="col-md-4">
-      <img src="http://presentation.creative-tim.com/assets/img/pic10.jpg" class="img-responsive">
+ </div>
+  <div class="row">
+   <div class="col-md-4">
+     <img src="http://presentation.creative-tim.com/assets/img/pic10.jpg" class="img-responsive">
       <img src="http://presentation.creative-tim.com/assets/img/pic6.jpg" class="img-responsive">
-    </div>
+   </div>
     
-    <div class="col-md-4">
-     <img src="http://presentation.creative-tim.com/assets/img/pic11.jpg" class="img-responsive">
-     <img src="http://presentation.creative-tim.com/assets/img/pic1.jpg" class="img-responsive">
-     <img src="http://presentation.creative-tim.com/assets/img/pic9.jpg" class="img-responsive">
-    </div>
+   <div class="col-md-4">
+    <img src="http://presentation.creative-tim.com/assets/img/pic11.jpg" class="img-responsive">
+    <img src="http://presentation.creative-tim.com/assets/img/pic1.jpg" class="img-responsive">
+    <img src="http://presentation.creative-tim.com/assets/img/pic9.jpg" class="img-responsive">
+   </div>
 
-    <div class="col-md-4">
-     <img src="http://presentation.creative-tim.com/assets/img/pic2.jpg" class="img-responsive">
-     <img src="http://presentation.creative-tim.com/assets/img/pic4.jpg" class="img-responsive">
-    </div>
+   <div class="col-md-4">
+    <img src="http://presentation.creative-tim.com/assets/img/pic2.jpg" class="img-responsive">
+    <img src="http://presentation.creative-tim.com/assets/img/pic4.jpg" class="img-responsive">
+   </div>
   </div>
  </div>
 </section>
@@ -246,13 +337,15 @@
       <!-- these container and row classes are predefined bootstrap classes -->
  <div class="container">
   <div class="row">
-  <h1 class="text-center section-heading">What we do</h1>
+   <div class="common-section-area">
+    <h1 class="text-center section-heading">What we do</h1>
       <!-- <hr> is used to underline the headings -->
-   <hr class="underline2" />
+    <hr class="underline2" />
+   </div>
       <!-- these are the column sections -->
    <div class="container">
     <div class="row">
-     <div class="col-md-4 text-center section-column">
+     <div class="col-md-4 text-center">
       <span class="about-icon">
        <i class="fa fa-cog" aria-hidden="true"></i>
       </span>
@@ -261,7 +354,7 @@
         We have created the tools that will help you in your next design project. From plugins to complex kits, we've got you covered in all areas regarding front-end development.
       </p>
      </div>
-     <div class="col-md-4 text-center section-column">
+     <div class="col-md-4 text-center">
       <span class="about-icon">
        <i class="fa fa-gift" aria-hidden="true"></i>
       </span>
@@ -270,7 +363,7 @@
         We've sponsored many hackathons around the world with the tools that they need to make awesome web applications. We like to help where we can, and our tools go hand in hand with startups.
       </p>
      </div>
-     <div class="col-md-4 text-center section-column">
+     <div class="col-md-4 text-center">
       <span class="about-icon">
        <i class="fa fa-rocket" aria-hidden="true"></i>
       </span>
@@ -291,42 +384,61 @@
        <!-- these container and row classes are predefined bootstrap classes -->
  <div class="container">
   <div class="row">
-  <h1 class="text-center section-heading">Our Team</h1>
-       <!-- <hr> is used to underline the headings -->
-   <hr class="underline3" />
+   <div class="common-section-area">
+     <h1 class="text-center section-heading">Our Team</h1>
+        <!-- <hr> is used to underline the headings -->
+     <hr class="underline3" />
+   </div>
 
    <div class="container">
     <div class="row">
-     <div class="col-md-3">
-      <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
-      <h3 class="text-center team-heading">ELENA CONACEL</h3>
-      <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
-     <hr>
-     <i class="fa fa-twitter"></i>
-     <i class="fa fa-linkedin"></i>
+     <div class="team-bottom">
+      <div class="col-md-3">
+       <img src="http://presentation.creative-tim.com/assets/img/elena.jpg" class="img-responsive img-circle team-img">
+       <h3 class="text-center team-heading">ELENA CONACEL</h3>
+       <p class="text-center team-about">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
+       <hr width="80%" class="team-horizontal-line">
+      <div class="team-social-links text-center">
+        <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
      </div>
-
      <div class="col-md-3">
       <img src="http://presentation.creative-tim.com/assets/img/diana.png" class="img-responsive img-circle team-img">
-      <h3 class="text-center team-heading">DIANA CALIMAN</h3>
-      <p class="text-center team-about">Diana is the person behind our social media channels, she takes care of our users' community and communication. She is ambitious, hard-working, instantly likeable and fun to be around.</p>
-     <hr>
+       <h3 class="text-center team-heading">DIANA CALIMAN</h3>
+       <p class="text-center team-about">Diana is the person behind our social media channels, she takes care of our users' community and communication. She is ambitious, hard-working, instantly likeable and fun to be around.</p>
+       <hr width="80%" class="team-horizontal-line">
+      <div class="team-social-links text-center">
+       <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+       <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+       <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+      </div>
      </div>
 
      <div class="col-md-3">
-      <img src="http://presentation.creative-tim.com/assets/img/alex.png" class="img-responsive img-circle team-img">
+     <img src="http://presentation.creative-tim.com/assets/img/alex.png" class="img-responsive img-circle team-img">
       <h3 class="text-center team-heading">ALEX PADURARU</h3>
       <p class="text-center team-about">Alex is one of the co-founders and drives the technical strategy of the platform, customer support and brand. He is level-headed, smart and with a taste for simple, aesthetic design.</p>
-     <hr>
+       <hr width="80%" class="team-horizontal-line">
+      <div class="team-social-links text-center">
+       <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+       <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+       <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+      </div>
      </div>
 
      <div class="col-md-3">
-      <img src="http://presentation.creative-tim.com/assets/img/beni.jpg" class="img-responsive img-circle team-img">
-      <h3 class="text-center team-heading">BENIAMIN MARCU</h3>
-      <p class="text-center team-about">Beni is the guy responsible for keeping the platform in check, improving its functionality and adding new features. He is driven, always open for learning more, friendly and a fan of Ruby on Rails. </p>
-     <hr>
+       <img src="http://presentation.creative-tim.com/assets/img/beni.jpg" class="img-responsive img-circle team-img">
+       <h3 class="text-center team-heading">BENIAMIN MARCU</h3>
+       <p class="text-center team-about">Beni is the guy responsible for keeping the platform in check, improving its functionality and adding new features. He is driven, always open for learning more, friendly and a fan of Ruby on Rails. </p>
+        <hr width="80%" class="team-horizontal-line">
+       <div class="team-social-links text-center">
+        <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+       </div>
+      </div>
      </div>
-
     </div>
    </div>
   </div>
@@ -336,20 +448,98 @@
     <!-- this is the coding for contact section -->
 
 <section id="contact">
+
       <!-- these container and row classes are predefined bootstrap classes -->
  <div class="container">
   <div class="row">
-  <h1 class="text-center section-heading">Contact Us</h1>
+   <div class="common-section-area">
+     <h1 class="text-center section-heading">Contact Us</h1>
       <!-- <hr> is used to underline the headings -->
-   <hr class="underline4" />
+     <hr class="underline4"/>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-md-4">
+     <h3 class="text-center">Where to meet? </h3>
+     <h4 class="text-center">Bld. Mihail Kogalniceanu nr. 8
+Bucharest, Romania</h4>
+     <br>
+     <h3 class="text-center">Want to say hello?</h3>
+    <div class="text-center">
+      <a href="#" class="btn btn-primary">Contact us</a>
+    </div>
+   </div>
+   <div class="col-md-8">
+    <div id="googlemap">
+    </div>
+ 
+   </div>
   </div>
  </div>
 </section>
+
+      <!-- this is the footer section --> 
+
+<footer>
+ <div class="container">
+  <div class="row">
+
+   <div class="col-md-4">
+    <div class="footer-links">
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Contact Us</a></li>
+       <li><a href="#">Blog</a></li>
+       <li><a href="#">Subscriptions</a></li>
+     </ul>
+    </div>
+   </div>
+   
+   <div class="col-md-4">
+    <div class="footer-center-content text-center">
+     &copy;copyright <span class="white-content">Creative Tim</span> 2017
+    </div>
+   </div>
+  
+   <div class="col-md-4">
+    <div class="footer-icons text-center">
+     <ul>
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>        </ul>
+    </div>
+   </div> 
+
+  </div>
+ </div>
+</footer>
+
+        <this is the JavaScript coding for adding the GoogleMap in html -->
+
+    <script>
+      function initMap() {
+        var uluru = {lat: 31.104814, lng: 77.173403};
+        var map = new google.maps.Map(document.getElementById('googlemap'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1tX8zMxtgFCkPAGs7enkp7NGCMEynqpw&callback=initMap">
+    </script>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.js"></script>
 
+
   </body>
-</html>
+
+ </html>

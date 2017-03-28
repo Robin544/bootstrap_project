@@ -91,7 +91,7 @@
    #creative
    {
      color: white;
-     font-size:120px;
+     font-size:100px;
      font-family: 'Cinzel', serif;
      letter-spacing:10px;
    }
@@ -120,9 +120,15 @@
      width: 19%;
    }
 
+   .underline5
+   {
+     border: 2px solid brown;
+     width: 26%;
+   }
+
    #home .home-heading
    {
-     width:60%;
+     width:58%;
      border: 2px solid #eee;
    }
 
@@ -185,6 +191,7 @@
 
    .team-img
    {
+     margin-top: 30px;
      width: 125px;
      margin: 0 auto;
      border: 2px solid #c5a47e;
@@ -276,6 +283,42 @@
      color:white;
    }
 
+   #tool img:hover
+   {
+    opacity: 0.6;
+    border: 1px solid brown;
+   } 
+   
+   .btn-primary, .btn-default
+   {
+     border-radius:20px;
+   }
+
+   @media (max-width: 500px)
+   {
+     #home h1
+     {
+       font-size: 51px;
+     }
+
+     #home h2
+     {
+       font-size: 21px;
+     }
+ 
+     .contact-description
+     {
+       margin-bottom: 20px;
+       margin-top: 10px;
+     }
+    
+     <!-- .btn-primary
+     {
+       margin-bottom:15px;
+     } -->
+
+
+   }
 
  </style>
 
@@ -302,12 +345,21 @@
   </div>
 
   <div class="Collapse navbar-collapse" id="navigationbar">
-   <ul class="nav navbar-nav navbar-right">
+   <ul class="nav navbar-nav navbar-left">
     <li><a href="#about">About</a></li>
     <li><a href="#what we do">What we do</a></li>
     <li><a href="#team">Team</a></li>
+    <li><a href="#tool">Tools</a></li>
     <li><a href="#contact">Contact</a></li>
    </ul>
+
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+   </ul>
+
   </div>
  </div>
 </nav>
@@ -482,6 +534,66 @@
  </div>
 </section>
 
+
+	<!-- this is the tool section -->
+
+<section id="tool">
+ <div class="container">
+  <div class="row">
+   <div class="common-section-area">
+     <h1 class="text-center section-heading">Our Main Tools</h1>
+     <hr class="underline5" />
+     <h4 class="text-center">Check out the most popular freebies from our platform. We would love to hear your feedback.</h4>
+   </div>
+  </div>
+
+  <div class="row">
+   <div class="container">
+  
+    <div class="col-md-4">
+     <div class="tools-elements"> 
+       <a href="#" target="_blank"><img src="http://presentation.creative-tim.com/assets/img/opt_md_thumbnail.jpg" class="img-responsive"></a>
+       <h4 class="text-center">Just Launched</h4>
+       <h3 class="text-center">Material Dashboard</h3>
+       <p class="text-center">Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design Live View.</p>
+       <div class="text-center">
+         <a href="#" class="btn btn-default">Live View</a>
+         <a href="#" class="btn btn-primary">Download</a>
+       </div>
+     </div>
+    </div>
+
+    <div class="col-md-4">
+     <div class="tools-elements"> 
+       <a href="#" target="_blank"><img src="http://presentation.creative-tim.com/assets/img/opt_mk_thumbnail.jpg" class="img-responsive"></a>
+       <h4 class="text-center">6.800+ Downloads</h4>
+       <h3 class="text-center">Material Kit</h3>
+       <p class="text-center">Material Kit is a Free Bootstrap UI Kit with a fresh, new design inspired by Google's material design. You asked for it, so we built it. It's a great pleasure to introduce...</p>
+       <div class="text-center">
+         <a href="#" class="btn btn-default">Live View</a>
+         <a href="#" class="btn btn-primary">Download</a>
+       </div>
+     </div>
+    </div>
+
+    <div class="col-md-4">
+     <div class="tools-elements"> 
+       <a href="#" target="_blank"><img src="http://presentation.creative-tim.com/assets/img/opt_GSDK_thumbnail.jpg" class="img-responsive"></a>
+       <h4 class="text-center">19.200+ Downloads</h4>
+       <h3 class="text-center">Get Shit Done Kit</h3>
+       <p class="text-center">Free Bootstrap 3 UI Kit, the best starting point for any online project you are building. It magically offers responsive design and easy to use elements.</p>
+       <div class="text-center">
+         <a href="#" class="btn btn-default">Live View</a>
+         <a href="#" class="btn btn-primary">Download</a>
+       </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+
     <!-- this is the coding for contact section -->
 
 <section id="contact">
@@ -492,7 +604,7 @@
    <div class="common-section-area">
      <h1 class="text-center section-heading">Contact Us</h1>
       <!-- <hr> is used to underline the headings -->
-     <hr class="underline4"/>
+     <hr class="underline4" />
    </div>
   </div>
   <div class="row">
@@ -506,7 +618,7 @@ Bucharest, Romania</h4>
       <a href="#" class="btn btn-primary">Contact us</a>
     </div>
    </div>
-   <div class="col-md-8">
+   <div class="col-md-8 contact-description">
     <div id="googlemap">
     </div>
  
